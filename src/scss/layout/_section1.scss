@@ -1,0 +1,24 @@
+.section1{
+    background-color: #fff;
+    width: 100%;
+    height: 373px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 15px;
+    &__textSmall{
+        font-family: $fontText;
+        color: #8ccbea;
+        font-size: 14px;
+    }
+    &__title{
+        font-family: $fontTitles;
+        color: $fontColorScnd;
+        font-size: 24px;
+    }
+    &__text{
+        font-family: $fontText;
+        color: #4a4a4a;
+        font-size: 18px;
+        line-height: 1.67;
+    }
+}
