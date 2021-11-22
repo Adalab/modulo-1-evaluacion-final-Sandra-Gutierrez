@@ -4,6 +4,7 @@
     height: 373px;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     padding: 0px 15px;
     &__textSmall{
         font-family: $fontText;
@@ -21,4 +22,21 @@
         font-size: 18px;
         line-height: 1.67;
     }
+    &__rectangle{
+        width: 76px;
+        height: 45px;
+        padding: 0 25px;
+        border-radius: 22.5px;
+        border: solid 2px $colorAction;
+        &--button{
+            font-family: $fontText;
+            color: $colorAction;
+            font-size: 20px;
+            line-height: 2.25;
+            width: 25px;
+            height: 45px;
+            font-weight: 600;
+        }
+    }
+    
 }
