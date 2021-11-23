@@ -10,17 +10,31 @@
         font-family: $fontText;
         color: #8ccbea;
         font-size: 14px;
+        margin-bottom: -20px;
+        @media all and(min-width:1140px){
+            font-size: 16px;
+            margin-bottom: -30px
+        }
     }
     &__title{
         font-family: $fontTitles;
         color: $fontColorScnd;
         font-size: 24px;
+        @media all and(min-width:720px){
+            font-size: 26px;
+        }
+        @media all and(min-width:1140px){
+            font-size: 32px;
+        }
     }
     &__text{
         font-family: $fontText;
         color: #4a4a4a;
         font-size: 18px;
         line-height: 1.67;
+        @media all and(min-width:720px){
+            font-size: 20px;
+        }
     }
     &__rectangle{
         width: 76px;
@@ -37,6 +51,21 @@
             height: 45px;
             font-weight: 600;
         }
+        @media all and(min-width:720px){
+            width: 91px;
+            height: 45px;
+            padding: 0 32.5px 0 33.5px;
+        }
+        @media all and(min-width:1140px){
+            width: 160px;
+            height: 45px;
+            padding: 0 67px 0 68px;
+        }
     }
-    
+    @media all and(min-width:720px){
+        padding: 0px 45px;
+    }
+    @media all and(min-width:1140px){
+        padding: 0px 275px;
+    }
 }
