@@ -54,6 +54,10 @@
         &:hover{
             font-size: 22px;
             box-shadow: 10px 10px 8px #888888;
+            border: 0;
+            background-color: $colorAction;
+            color: #fff;
+            font-weight: 100;
         }
         @media all and(min-width:720px){
             width: 95px;

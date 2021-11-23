@@ -1,6 +1,6 @@
 @keyframes boingUp {
     0%   {top:0px;}
-    25%  {top:-10px;}
+    25%  {top:-15px;}
     50%  {top:0px;}
     75%  {top:-10px;}
     100% {top:0px;}
@@ -30,7 +30,7 @@
         transform: translate(-50%, -50%);
         &:hover{
             animation-name: boingUp;
-            animation-duration: 1s;
+            animation-duration: 0.8s;
             animation-iteration-count: 1;
             box-shadow: 4px 7px 9px #0e1524;
         }
@@ -60,6 +60,9 @@
     &__info{
         font-size: 14px;
         line-height: 2.14;
+        &--love{
+            color: $colorAction;
+        }
         @media all and(min-width:720px){
             order: -1;
         }
