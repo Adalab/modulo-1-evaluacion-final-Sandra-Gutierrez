@@ -13,6 +13,15 @@
         line-height: 1.25;
         color: $fontColorScnd;
         text-transform: capitalize;
+        @media all and(min-width:720px){
+            grid-column: 1 / 4;
+            font-size: 26px;
+            line-height: 1.73;
+        }
+        @media all and(min-width:1140px){
+            font-size: 32px;
+            line-height: 1.41;
+        }
     }
     &__article{
         color: $fontColorScnd;
@@ -21,9 +30,18 @@
         padding: 0px 50px;
         &--title{
             font-family: $fontTitles;
+            @media all and(min-width:720px){
+                font-size: 24px;
+                line-height: 1.25;
+                margin-bottom: 14px;
+            }
         }
         &--text{
             font-family: $fontText;
+            @media all and(min-width:720px){
+                font-size: 20px;
+                line-height: 1.25;
+            }
         }
     }
     &__rectangle{
@@ -38,5 +56,25 @@
             line-height: 2.25;
             color: $fontColorPpal;
         }
+        @media all and(min-width:720px){
+            grid-column: 1 / 4;
+            width: 210px;
+            padding: 0 42.5px 0 43.5px;
+        }
+        @media all and(min-width:1140px){
+            width: 255px;
+            padding: 0 62px 0 63px;
+        }
+    }
+    @media all and(min-width:720px){
+        padding: 30px 45px;
+        height: 397px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 20% 60% 20%;
+    }
+    @media all and(min-width:1140px){
+        padding: 60px 81px 30px 81px;
+        height: 427px;
+        grid-template-rows: 30% 40% 30%;
     }
 }
