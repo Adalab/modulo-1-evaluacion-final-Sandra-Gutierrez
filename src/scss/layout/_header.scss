@@ -1,3 +1,10 @@
+@keyframes boingDown {
+    0%   {top:0px;}
+    25%  {top:10px;}
+    50%  {top:0px;}
+    75%  {top:10px;}
+    100% {top:0px;}
+}
 .header{
     background-image: url(../images/cover.jpg);
     background-repeat: no-repeat;
@@ -51,5 +58,12 @@
         border-radius: 22.5px;
         background-color: #fff;
         margin-bottom: 53px;
+        position: relative;
+        &:hover{
+            animation-name: boingUp;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            box-shadow: 4px 7px 9px #0e1524;
+        }
     }
 }
