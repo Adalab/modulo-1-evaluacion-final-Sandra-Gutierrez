@@ -50,9 +50,10 @@
         line-height: 45px;
         border: 2px solid $colorAction;
         border-radius: 22px;
+        transition: font-size ease 0.5s, box-shadow ease 0.5s;
         &:hover{
-            color: #fff;
-            background-color: $colorAction;
+            font-size: 22px;
+            box-shadow: 10px 10px 8px #888888;
         }
         @media all and(min-width:720px){
             width: 95px;
