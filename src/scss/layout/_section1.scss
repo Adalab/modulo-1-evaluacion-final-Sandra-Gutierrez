@@ -38,30 +38,27 @@
             font-size: 20px;
         }
     }
-    &__rectangle{
-        width: 76px;
+    &__boton{
+        color: $colorAction;
+        font-family: $fontText;
+        font-size: 20px;
+        font-weight: 600;
+        display: inline-block;
+        width: 75px;
         height: 45px;
-        padding: 0 25px;
-        border-radius: 22.5px;
-        border: solid 2px $colorAction;
-        &--button{
-            font-family: $fontText;
-            color: $colorAction;
-            font-size: 20px;
-            line-height: 2.25;
-            width: 25px;
-            height: 45px;
-            font-weight: 600;
+        text-align: center;
+        line-height: 45px;
+        border: 2px solid $colorAction;
+        border-radius: 22px;
+        &:hover{
+            color: #fff;
+            background-color: $colorAction;
         }
         @media all and(min-width:720px){
-            width: 91px;
-            height: 45px;
-            padding: 0 32.5px 0 33.5px;
+            width: 95px;
         }
         @media all and(min-width:1140px){
             width: 160px;
-            height: 45px;
-            padding: 0 67px 0 68px;
         }
     }
     @media all and(min-width:720px){
@@ -71,3 +68,4 @@
         padding: 0px 275px;
     }
 }
+
