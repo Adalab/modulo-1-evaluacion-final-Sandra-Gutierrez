@@ -1,0 +1,42 @@
+.section2{
+    width: 100%;
+    height: 624px;
+    background-color: #eff9ff;
+    padding: 30px 15px 60px 15px;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15% 25% 25% 25% 10%;
+    &__title{
+        font-family: $fontTitles;
+        font-size: 24px;
+        line-height: 1.25;
+        color: $fontColorScnd;
+        text-transform: capitalize;
+    }
+    &__article{
+        color: $fontColorScnd;
+        font-size: 18px;
+        line-height: 1.67;
+        padding: 0px 50px;
+        &--title{
+            font-family: $fontTitles;
+        }
+        &--text{
+            font-family: $fontText;
+        }
+    }
+    &__rectangle{
+        width: 184px;
+        height: 45px;
+        margin: 0 auto;
+        border-radius: 22.5px;
+        background-color: $colorAction;
+        &--button{
+            font-family: $fontText;
+            font-size: 20px;
+            line-height: 2.25;
+            color: $fontColorPpal;
+        }
+    }
+}
