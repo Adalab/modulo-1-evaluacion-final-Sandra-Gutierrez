@@ -1,3 +1,10 @@
+@keyframes boing {
+    0%   {top:0px;}
+    25%  {top:-10px;}
+    50%  {top:0px;}
+    75%  {top:-10px;}
+    100% {top:0px;}
+}
 .footer{
     width: 100%;
     height: 465px;
@@ -21,6 +28,12 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+        &:hover{
+            animation-name: boing;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            box-shadow: 4px 7px 9px #0e1524;
+        }
     }
     &__nav{
         text-transform: uppercase;
