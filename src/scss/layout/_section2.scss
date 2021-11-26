@@ -45,8 +45,9 @@
         }
     }
     &__button{
-        color: #fff;
-        background-color: $colorAction;
+        color: $colorAction;
+        background-color: #fff;
+        border: 2px solid $colorAction;
         font-family: $fontText;
         font-size: 20px;
         width: 184px;
@@ -55,9 +56,13 @@
         border-radius: 22px;
         margin: 0 auto;
         transition: font-size ease 0.5s, box-shadow ease 0.5s;
+        font-weight: 600;
         &:hover{
             font-size: 22px;
             box-shadow: 10px 10px 8px #888888;
+            background-color: $colorAction;
+            color: #fff;
+            font-weight: 100;
         }
         @media all and(min-width:720px){
             grid-column: 1 / 4;

@@ -28,11 +28,15 @@
         top: 0;
         left: 50%;
         transform: translate(-50%, -50%);
+        display: none;
         &:hover{
             animation-name: boingUp;
             animation-duration: 0.8s;
             animation-iteration-count: 1;
             box-shadow: 4px 7px 9px #0e1524;
+        }
+        @media all and(min-width:720px){
+            display: block;
         }
     }
     &__nav{
@@ -63,9 +67,9 @@
         &--love{
             color: $colorAction;
         }
-        @media all and(min-width:720px){
+/*         @media all and(min-width:720px){
             order: -1;
-        }
+        } */
     }
     @media all and(min-width:720px){
         padding: 45px;
